@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Beadando</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="left">
+        <div id="mapDiv">
+          <h1>Burgonyatérkép</h1>
+
+          <table id="mapTable"></table>
+        </div>
+      </div>
+      <div class="right">
+        <div class="seasonPointsDiv">
+          <div class="seasonContainer">
+            Tavasz:<span class="seasonalPoint"> 0 pont</span>
+          </div>
+          <div class="seasonContainer">
+            Nyár:<span class="seasonalPoint"> 0 pont</span>
+          </div>
+          <div class="seasonContainer">
+            Ősz:<span class="seasonalPoint"> 0 pont</span>
+          </div>
+          <div class="seasonContainer">
+            Tél:<span class="seasonalPoint"> 0 pont</span>
+          </div>
+        </div>
+        <div class="totalScoreDiv">
+          Összesen: <span class="totalPoints">0</span> pont
+        </div>
+        <div class="currentSeasonDiv">
+          Jelenlegi évszak: <span id="currentSeason"></span> (<span
+            id="currentMission"
+          ></span
+          >)
+        </div>
+        <hr />
+        <div class="missionsContainer"></div>
+        <div class="seasonTimerDiv">
+          Évszakból hátralévő idő: <span id="timeLeftFromSeason"></span>
+        </div>
+        <hr />
+
+        <div class="movementContainer">
+          <span>Lehelyezendő elem: </span>
+          <div class="previewContainer">
+            <div class="movementButtons">
+              <button id="rotateButton">Forgatás</button>
+              <button id="mirrorButton">Tükrözés</button>
+              <button id="resetButton">Játék újraindítása</button>
+            </div>
+            <div class="currentElement">
+              <div class="timeContainer">
+                <span id="elementTime"></span>
+                <img class="timeImage" src="assets/time.png" alt="ido" />
+              </div>
+              <div class="previewGrid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
